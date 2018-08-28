@@ -1,0 +1,31 @@
+.comp-progress-bar{
+    padding: 24px;
+    background-color: seagreen;
+    .bar-wrap{
+        position: relative;
+        height: 3px;
+        background-color: #c5c5c5;
+        border-radius: 3px;
+        cursor: pointer;
+        .bar-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+            width: 20%;
+            height: 3px;
+            background-color: #fff;
+            &:after{
+                content: '';
+                position: absolute;
+                right: -3px;
+                top: -3px;
+                display: inline-block;
+                width: 9px;
+                height: 9px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        }
+    }
+}
