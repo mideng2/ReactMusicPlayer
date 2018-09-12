@@ -16,14 +16,12 @@
     
     .content{
         width: 600px;
-        height: 60%;
-        min-height: 480px;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
         
-        padding: 64px;
+        padding: 48px;
         border: 3px solid #00c518;
         border-radius: 8px;
         //box-shadow: 0 4px 20px 4px rgba(147, 197, 157, 0.49);
@@ -31,7 +29,30 @@
         color: #fff;
     
         &-top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .top-left{
         
+                .file-name{
+                    font-size: 48px;
+                    padding-bottom:16px;
+                }
+                .author{
+                    font-size: 18px;
+                    color: #eaeaea;
+                }
+            }
+            .top-right{
+                .img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        
+        &-center{
+            height: 300px;
         }
     
         &-bottom{

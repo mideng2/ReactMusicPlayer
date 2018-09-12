@@ -66,9 +66,25 @@ class Player extends React.Component{
                     <div className='content-top'>
 
 
-                        歌词滚动
+                        <div className='top-left'>
+                            <p className='file-name'>
+                                {this.props.currentMusitItem.fileName}
+
+                            </p>
+                            <p className='author'>
+                                {this.props.currentMusitItem.author}
+                            </p>
+                        </div>
+                        <div className='top-right'>
+                            <img src={this.props.currentMusitItem.imgUrl} alt="" className='ui-current-music-img img'/>
+                        </div>
                     </div>
 
+
+                    <div className='content-center'>
+
+
+                    </div>
                     <div className='content-bottom'>
                         {`${this.state.time} : ${formats.formatTime(duration)}`}
 
